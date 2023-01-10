@@ -8,37 +8,31 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        black: '#000112',
-        darkBg: '#20212C',
-        darkGrey: '#2B2C37',
-        linesDark: '#3E3F4E',
-        mediumGrey: '#828FA3',
-        linesLight: '#E4EBFA',
-        lightBg: '#F4F7FD',
+        black: '#0B0D17',
         white: '#FFFFFF',
-        purple: '#635FC7',
-        purpleHover: '#A8A4FF',
-        red: '#EA5555',
-        redHover: '#FF9898',
+        purple: '#D0D6F9',
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'sans-serif']
+        sans: ['Barlow Semi Condensed', 'sans-serif'],
+        bellefair: ['Bellefair', 'sans-serif']
       },
       fontSize: {
-        hS: '12px',
-        bL: '13px',
-        hM: '15px',
-        hL: '18px',
-        hXL: '24px',
+        shM: '14px',
+        nav: '16px',
+        body: '18px',
+        hS: '28px',
+        hM: '32px',
+        hL: '56px',
+        hXL: '100px',
+        hXXL: '150px',
       },
       lineHeight: {
-        S: '15px',
-        M: '19px',
-        L: '23px',
-        XL: '30px',
+        M: '32px',
       },
       letterSpacing: {
-        S: '2.4px',
+        S: '2.35px',
+        M: '2.7px',
+        L: '4.75px',
       }
     },
   },
