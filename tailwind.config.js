@@ -14,7 +14,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Barlow Semi Condensed', 'sans-serif'],
-        bellefair: ['Bellefair', 'sans-serif']
+        bellefair: ['Bellefair', 'sans-serif'],
+        barlow: ['Barlow', 'sans-serif'],
       },
       fontSize: {
         shM: '14px',
@@ -27,12 +28,16 @@ module.exports = {
         hXXL: '150px',
       },
       lineHeight: {
+        S: '25px',
+        S: '28px',
         M: '32px',
       },
       letterSpacing: {
+        XS: '1.25px',
         S: '2.35px',
         M: '2.7px',
-        L: '4.75px',
+        L: '3.38px',
+        XL: '4.75px',
       },
       backgroundImage: {
         'background-home-desktop': "url('../public/assets/home/background-home-desktop.jpg')",
