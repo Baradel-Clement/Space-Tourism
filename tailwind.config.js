@@ -29,8 +29,8 @@ module.exports = {
       },
       lineHeight: {
         S: '25px',
-        S: '28px',
-        M: '32px',
+        M: '28px',
+        L: '32px',
       },
       letterSpacing: {
         XS: '1.25px',
