@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { useState } from 'react';
 import Layout from '../components/Layout';
 import Image from 'next/image';
@@ -24,8 +23,8 @@ const DestinationPage = ({ destinations }: Props) => {
   return (
     <Layout title="Space Tourism Destination">
       <div className='w-[327px] md:w-full xl:w-[80vw] xl:max-w-[1500px] xl:h-[570px] px-[39px] xl:px-0 flex flex-col items-center mt-6 md:mt-10 xl:items-end xl:justify-end xl:mt-[76px] relative'>
-        <p className='text-nav md:text-[20px] xl:text-hS tracking-M xl:tracking-XL self-start xl:absolute xl:top-0 xl:left-0'><span className='text-white/40 font-bold xl:mr-7'>0{currentDestination}</span> PICK YOUR DESTINATION</p>
-        <div className='w-[100vw] h-[170px] md:h-[300px] xl:h-[445px] relative flex justify-center mt-8 md:mt-[60px] mb-[26px] md:mb-[53px] overflow-hidden xl:absolute xl:overflow-visible xl:left-0 xl:w-full xl:m-0'>
+        <p className='text-nav md:text-[20px] xl:text-hS tracking-M xl:tracking-XL self-start xl:absolute xl:top-0 xl:left-0'><span className='text-white/40 font-bold xl:mr-7'>01</span> PICK YOUR DESTINATION</p>
+        <div className='w-[100vw] h-[130px] md:h-[300px] xl:h-[445px] relative flex justify-center mt-8 md:mt-[60px] mb-[26px] md:mb-[53px] overflow-hidden xl:absolute xl:overflow-visible xl:left-0 xl:w-full xl:m-0'>
           <AnimatePresence>
             <motion.div
               key={currentDestination}
@@ -33,7 +32,7 @@ const DestinationPage = ({ destinations }: Props) => {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -500, opacity: 0 }}
               transition={{ duration: 0.5, ease: 'easeInOut' }}
-              className='absolute xl:left-[97px] w-[170px] h-[170px] md:w-[300px] md:h-[300px] xl:w-[445px] xl:h-[445px]'
+              className='absolute xl:left-[97px] w-[130px] h-[130px] md:w-[300px] md:h-[300px] xl:w-[445px] xl:h-[445px]'
             >
               <Image className={`absolute top-0 ${currentDestination === 1 ? 'active' : ''}`} src={pictures[currentDestination - 1]} alt='Moon Picture' />
             </motion.div>
@@ -55,10 +54,10 @@ const DestinationPage = ({ destinations }: Props) => {
           transition={{ duration: 1, ease: 'easeInOut' }}
           className='w-full flex items-center xl:items-start flex-col mt-[20px] md:mt-[25px] xl:mt-[40px] text-center xl:text-start md:w-[573px] xl:h-[401px] xl:w-[445px] xl:relative xl:z-30'
         >
-          <h2 className='text-hL md:text-[80px] xl:text-hXL font-bellefair md:h-[92px] xl:h-[115px]'>{destinations[currentDestination - 1].name}</h2>
+          <h2 className='text-[38px] md:text-[80px] xl:text-hXL font-bellefair md:h-[92px] xl:h-[115px]'>{destinations[currentDestination - 1].name}</h2>
           <p className='text-[15px] md:text-nav xl:text-body text-purple leading-S md:leading-M font-barlow md:mt-[18px] xl:mt-[24px]'>{destinations[currentDestination - 1].description}</p>
-          <span className='bg-[#383B4B] h-[1px] w-full mt-8 md:mt-[50px] mb-8 md:mb-7 ' />
-          <div className='flex flex-col md:flex-row justify-between xl:justify-start items-center h-[154px] md:h-auto md:w-[450px]'>
+          <span className='bg-[#383B4B] h-[1px] w-full mt-3 md:mt-[50px] mb-3 md:mb-7 ' />
+          <div className='flex flex-col md:flex-row justify-between xl:justify-start items-center h-[130px] md:h-auto md:w-[450px]'>
             <div className='flex flex-col justify-between items-center w-[216px] xl:w-auto xl:items-start xl:mr-[79px]'>
               <p className='text-shM text-purple tracking-S'>AVG. DISTANCE</p>
               <p className='text-hM xl:text-hS font-bellefair uppercase'>{destinations[currentDestination - 1].distance}</p>
